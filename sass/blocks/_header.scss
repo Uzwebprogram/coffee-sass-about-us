@@ -12,6 +12,7 @@
     &__item{
         display: flex;
     list-style-type: none;
+
     }
 
     
@@ -43,6 +44,35 @@
             color: #333D4B;
         }
     }
-    
-
    }
+
+//    responsive table 768px start
+
+   @media only screen and (max-width: 768px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 46px;
+        margin-bottom: 58px;
+        padding: 0 25px;
+        &__atribut{
+            margin: auto 0;
+        }
+        &__item{
+            margin: auto 0;
+            &--list{
+                margin-left: 32px;
+                &--atribut{
+                    font-family: "Barlow" , "Arial" , sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0.923077px;
+                    text-transform: uppercase;
+                    color: #83888F;
+                }
+            }
+        }
+    }
+   }//    responsive table 768px end

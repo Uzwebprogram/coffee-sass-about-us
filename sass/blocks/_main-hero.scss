@@ -1,15 +1,13 @@
 .main__hero{
     background-image: url(./../image/Bitmap.png);
-    width: 1280px;
-    height: 600px;
+    max-width: 1280px;
     border-radius: 10px;
     margin-bottom: 195px;
 
     &--heading{
         margin: 0;
         padding: 0;
-        width: 593px;
-        height: 145px;
+        max-width: 593px;
         left: 0%;
         right: 0%;
         top: calc(50% - 145px/2 - 55px);    
@@ -22,8 +20,7 @@
         margin-bottom: 32px;
     }
     &--box{
-        width: 493px;
-        height: 367px;
+        max-width: 493px;
         padding-top: 120px;
         padding-left: 87px;
     }
@@ -58,7 +55,8 @@
         width: 217px;
         height: 56px;
         border: none;
-        cursor: pointer;   
+        cursor: pointer; 
+        margin-bottom: 116px;  
 
         &:active{
             background: #66D2CF;
@@ -68,3 +66,49 @@
     
 
 }
+// responsive main-hero start
+@media only screen and (max-width: 768px) {
+    .main__hero{
+        background-image: url(./../../image/Bitmap-table.png);
+        width: 689px;
+        height: 500px;
+        margin: 0 auto;
+        border-radius: 10px;
+        margin-bottom: 144px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // margin: 0 25px;
+        &--box{
+            max-width: 393px;
+            padding-top: 103px;
+            padding-left: 58px;
+        }
+        &--heading{
+            margin: 0;
+            padding: 0;
+            font-family: "Fraunces" 9pt;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 48px;
+            color: #FEFCF7;
+            margin-bottom: 24px;
+        }
+        &--text{
+            margin: 0;
+            padding: 0;
+            font-family: "Barlow" , "Arial" , sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FEFCF7;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+            max-width: 378px;
+            margin-bottom: 40px;
+        }
+    }
+
+} 
+// responsive main-hero end

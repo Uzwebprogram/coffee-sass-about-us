@@ -1,9 +1,8 @@
 .choose{
-    width: 1280px;
+    max-width: 1280px;
     height: 577px;
     background-color: #2C343E;
     border-radius: 10px;
-    margin-top: 200px;
 
     &__us{
         margin:  0 auto;
@@ -40,7 +39,7 @@
     }
 
     &__box{
-        width: 1110px;
+        max-width: 1110px;
         text-align: center;
         display: flex;
         justify-content: space-between;
@@ -68,7 +67,7 @@
         border-radius: 8px;
     }
 
-    &__box-coffee--heading{
+    &__box--coffee--heading{
         font-family:"Hind Madurai" , "Fraunces" , "Arial"  ;
         font-style: normal;
         font-weight: 900;
@@ -173,8 +172,155 @@
         height: 78px;
         margin-left: 47px;
     }
-    
 
-    
 
+
+
+}
+@media only screen and (max-width: 768px){
+    .choose{
+        max-width: 688px;
+        margin: 0 auto;
+        height: 677px;
+        background-color: #2C343E;
+        border-radius: 10px;
+        margin-bottom: 144px;
+        position: relative;
+        top: -344px;
+        &__us{
+            max-width: 540px;
+
+            &--heading{
+                font-size: 32px;
+                line-height: 48px;
+            }
+            &--padding{
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+        &__box{
+            position: relative;
+            margin-bottom: 20px;
+            max-width: 688px;
+            display: flex;
+            flex-direction: column;
+            max-height: 180px;
+
+
+            &--coffee{
+                width: 573px;
+                display: flex;
+                margin: 0 auto; 
+                justify-content:left;
+                margin-bottom: 24px;
+                &--right{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+
+                }
+                &--heading{
+                    display: flex;
+                    justify-content: left;
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 16px;
+                    margin-top: 41px;
+                    margin-left: 181px;
+                    &::before{
+                        position: absolute;
+                        right: 500px;
+                        margin-top: 10px;
+                        // left: 20px;
+                    }
+                }
+                &--padding{
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    text-align: left;
+                    margin-bottom: 41px;
+                    margin-left: 181px;
+                    width: 344px;
+                }
+            }
+            &--surip{
+                width: 573px;
+                display: flex;
+                margin: 0 auto; 
+                justify-content:left;
+                margin-bottom: 24px;
+                &--right{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+    
+                }
+                &--heading{
+                    display: flex;
+                    justify-content: left;
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 16px;
+                    margin-top: 41px;
+                    margin-left: 181px;
+                    &::before{
+                        position: absolute;
+                        right: 500px;
+                        margin-top: 10px;
+                        // left: 20px;
+                    }
+                }
+                &--padding{
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    text-align: left;
+                    margin-bottom: 41px;
+                    margin-left: 181px;
+                    width: 344px;
+                }
+            }
+            &--speed{
+                width: 573px;
+                display: flex;
+                margin: 0 auto; 
+                justify-content:left;
+                margin-bottom: 24px;
+                &--right{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+    
+                }
+                &--heading{
+                    display: flex;
+                    justify-content: left;
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 16px;
+                    margin-top: 41px;
+                    margin-left: 181px;
+                    &::before{
+                        position: absolute;
+                        right: 500px;
+                        margin-top: 10px;
+                        // left: 20px;
+                    }
+                }
+                &--padding{
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    text-align: left;
+                    margin-bottom: 41px;
+                    margin-left: 181px;
+                    width: 344px;
+                }
+            }
+        }
+     
+
+    }
 }
